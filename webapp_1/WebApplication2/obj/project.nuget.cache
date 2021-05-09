@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VP1azEt3po5rIIlrTsRn9S1Wd8inuwoRZo5vV50psgXkgwfnQJ0oTVpvFcQJmbZ5lVd83S87ugeWzHBXgDkwPw==",
+  "dgSpecHash": "BBkU9a1LEG12M2VilOmeW8pmWB6qfwpr/VNiEH+HjZlOiZQgaltKa27kiwxEEpqJUBB5EiOP80sZMVyg3vn2AQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\computer\\Desktop\\CPE332\\webapp_1\\WebApplication2\\WebApplication2.csproj",
+  "projectFilePath": "C:\\Users\\computer\\Desktop\\CPE332\\cpe332_database_ae\\webapp_1\\WebApplication2\\WebApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\computer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

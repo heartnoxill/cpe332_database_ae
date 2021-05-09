@@ -1,0 +1,66 @@
+﻿@model IEnumerable<train_project_1.Models.Passenger>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.P_fname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.P_lname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.P_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.P_DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prefix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Class_name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_fname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_lname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prefix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class_name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.P_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.P_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.P_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

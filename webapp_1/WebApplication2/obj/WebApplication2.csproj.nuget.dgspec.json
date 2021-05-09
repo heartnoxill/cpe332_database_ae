@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\computer\\Desktop\\CPE332\\webapp_1\\WebApplication2\\WebApplication2.csproj": {}
+    "C:\\Users\\computer\\Desktop\\CPE332\\cpe332_database_ae\\webapp_1\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\computer\\Desktop\\CPE332\\webapp_1\\WebApplication2\\WebApplication2.csproj": {
+    "C:\\Users\\computer\\Desktop\\CPE332\\cpe332_database_ae\\webapp_1\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\computer\\Desktop\\CPE332\\webapp_1\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "C:\\Users\\computer\\Desktop\\CPE332\\cpe332_database_ae\\webapp_1\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "C:\\Users\\computer\\Desktop\\CPE332\\webapp_1\\WebApplication2\\WebApplication2.csproj",
+        "projectPath": "C:\\Users\\computer\\Desktop\\CPE332\\cpe332_database_ae\\webapp_1\\WebApplication2\\WebApplication2.csproj",
         "packagesPath": "C:\\Users\\computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\computer\\Desktop\\CPE332\\webapp_1\\WebApplication2\\obj\\",
+        "outputPath": "C:\\Users\\computer\\Desktop\\CPE332\\cpe332_database_ae\\webapp_1\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\computer\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,55 @@
+﻿@model train_project_1.Models.Ticket
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date_issued)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date_issued)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Passenger)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Passenger.P_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Train)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Train.TR_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Class.C_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.R_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.R_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ScheduleDeparture_date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ScheduleDeparture_date)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.T_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

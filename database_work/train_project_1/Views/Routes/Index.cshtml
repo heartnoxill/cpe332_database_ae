@@ -1,0 +1,84 @@
+﻿@model IEnumerable<train_project_1.Models.Route>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.R_price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departure_station)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departure_city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departure_state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destination_station)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destination_city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destination_state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.R_price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure_station)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure_city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure_state)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination_station)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination_city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination_state)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.R_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.R_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.R_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
